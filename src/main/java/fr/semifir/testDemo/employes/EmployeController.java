@@ -35,6 +35,7 @@ public class EmployeController {
 
     @PostMapping
     public ResponseEntity<EmployeDTO> save(@RequestBody EmployeDTO employeDTO) {
+        System.out.println("salut a tous");
         EmployeDTO response = this.service.save(employeDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
