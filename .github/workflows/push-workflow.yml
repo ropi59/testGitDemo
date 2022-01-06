@@ -1,8 +1,6 @@
 name: Workflow-push
-
 on:
   push:
-
 jobs:
   tests-unitaires:
     runs-on: ubuntu-latest
